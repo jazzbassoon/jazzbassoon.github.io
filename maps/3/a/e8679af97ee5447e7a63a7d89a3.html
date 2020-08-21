@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en-US">
+	<title>Benjamin Bradshaw Family Tree - Family Map</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps 4.2.8 http://gramps-project.org/" />
+	<meta name="author" content="" />
+	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../../../css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-maps.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="http://www.openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
+<script deter="deter" style="width =100%; height =100%;" type="text/javascript">
+
+  OpenLayers.Lang.setCode("us");
+  var map;
+
+  var tracelife = [
+    [-74.25188200, 42.30781200],
+    [-113.06172200, 37.68049200],
+    [-2.71569200, 52.05621800],
+    [-111.89100000, 40.76080000],
+    [-113.06172200, 37.68049200],
+    [-113.06172200, 37.68049200],
+    [-113.06172200, 37.68049200],
+    [-113.06172200, 37.68049200],
+    [-113.06172200, 37.68049200],
+    [-113.28122500, 37.23770100],
+    [-113.28122500, 37.23770100],
+    [-113.28122500, 37.23770100],
+    [-113.28122500, 37.23770100],
+    [-113.28122500, 37.23770100],
+    [-109.75860000, 32.84903800],
+    [-112.12001000, 39.95446300],
+    [-111.89100000, 40.76080000],
+    [-113.28122500, 37.23770100],
+    [-111.89100000, 40.76080000],
+    [-117.29066300, 34.10526200],
+    [-122.41602900, 37.77462500],
+    [-111.89100000, 40.76080000],
+    [-118.19371400, 33.76959600],
+    [-111.89100000, 40.76080000],
+    [-114.91965600, 35.46519800]
+  ];
+
+  function initialize(){
+    map = new OpenLayers.Map('map_canvas');
+
+    var wms = new OpenLayers.Layer.WMS(
+      "OpenLayers WMS",
+      "http://vmap0.tiles.osgeo.org/wms/vmap0",
+      {'layers':'basic'});
+    map.addLayer(wms);
+
+    map.setCenter(new OpenLayers.LonLat(-92.00524000, 42.45262800), 3);
+
+    var markers = new OpenLayers.Layer.Markers("Markers");
+    map.addLayer(markers);
+
+    addMarkers(markers, map);
+  }
+
+  function addMarkers(markers, map) {
+    for (var i = 0; i < tracelife.length; i++) {
+      var location = tracelife[i];
+
+      marker = new OpenLayers.Marker(new OpenLayers.LonLat(location[0], location[1]));
+      markers.addMarker(marker); 
+      map.addControl(new OpenLayers.Control.LayerSwitcher());
+    }
+  }
+</script>
+</head>
+<body id ="FamilyMap" onload ="initialize()">
+	<div id="header">
+		<h1 id="SiteTitle">Benjamin Bradshaw Family Tree</h1>
+	</div>
+	<div class="wrapper" id="nav" role="navigation">
+		<div class="container">
+			<ul class="menu" id="dropmenu">
+				<li><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
+				<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
+				<li><a href="../../../families.html" title="Families">Families</a></li>
+				<li><a href="../../../places.html" title="Places">Places</a></li>
+				<li><a href="../../../sources.html" title="Sources">Sources</a></li>
+				<li><a href="../../../thumbnails.html" title="Thumbnails">Thumbnails</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content" id="FamilyMapDetail">
+		<h3>Tracking Price, Eliza Ann</h3>
+		<p id="description">
+		This map page represents that person and any descendants with all of their event/ places. If you place your mouse over the marker it will display the place name. The markers and the Reference list are sorted in date order (if any?). Clicking on a place&#8217;s name in the Reference section will take you to that place&#8217;s page.
+		</p>
+		<div id="map_canvas">
+		</div>
+		<div class="subsection" id="references">
+			<h4>References</h4>
+			<table class="infolist">
+				<thead>
+					<tr>
+						<th class="ColumnDate">Date</th>
+						<th class="ColumnPlace">Place Title</th>
+						<th class="ColumnType">Event Type</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="ColumnDate">1813-05-27</td>
+						<td class="ColumnPlace"><a href="../../../plc/0/d/e867999530d3116da1ba8fd1fd0.html" title="Windham Grove, Greene, New York, United States of America">Windham Grove, Greene, New York, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1827-05-18</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb912f4b2569a0559956735f7.html" title="Cedar City, Iron, Utah, United States of America">Cedar City, Iron, Utah, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1833-05-13</td>
+						<td class="ColumnPlace"><a href="../../../plc/4/6/e8679c7309352f2ea95c7a6dd64.html" title="Hereford, Herefordshire, West Midlands, England">Hereford, Herefordshire, West Midlands, England</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1853-10-10</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+						<td class="ColumnType">Marriage</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1854-10-22</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb912f4b2569a0559956735f7.html" title="Cedar City, Iron, Utah, United States of America">Cedar City, Iron, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1856-10-21</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb912f4b2569a0559956735f7.html" title="Cedar City, Iron, Utah, United States of America">Cedar City, Iron, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1858-05-08</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb912f4b2569a0559956735f7.html" title="Cedar City, Iron, Utah, United States of America">Cedar City, Iron, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1860-01-11</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb912f4b2569a0559956735f7.html" title="Cedar City, Iron, Utah, United States of America">Cedar City, Iron, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1861-08-09</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb912f4b2569a0559956735f7.html" title="Cedar City, Iron, Utah, United States of America">Cedar City, Iron, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1863-07-25</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/8/e6dc23eb4991c3f5b3936474a81.html" title="Toquerville, Washington, Utah, United States of America">Toquerville, Washington, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1865-09-03</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/8/e6dc23eb4991c3f5b3936474a81.html" title="Toquerville, Washington, Utah, United States of America">Toquerville, Washington, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1868-05-29</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/8/e6dc23eb4991c3f5b3936474a81.html" title="Toquerville, Washington, Utah, United States of America">Toquerville, Washington, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1870-05-09</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/8/e6dc23eb4991c3f5b3936474a81.html" title="Toquerville, Washington, Utah, United States of America">Toquerville, Washington, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1873-10-11</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/8/e6dc23eb4991c3f5b3936474a81.html" title="Toquerville, Washington, Utah, United States of America">Toquerville, Washington, Utah, United States of America</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1886-09-08</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/6/e8679abedfa1c8e68d227e25e67.html" title="Thatcher, Graham, Arizona, United States of America">Thatcher, Graham, Arizona, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1897-03-02</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/a/e8679eb0bf526cb2583e02e1da7.html" title="Eureka, Juab, Utah, United States of America">Eureka, Juab, Utah, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1900-10-17</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1911-03-03</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/8/e6dc23eb4991c3f5b3936474a81.html" title="Toquerville, Washington, Utah, United States of America">Toquerville, Washington, Utah, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1922-12-10</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1924-11-23</td>
+						<td class="ColumnPlace"><a href="../../../plc/f/8/e86252e59345ffada0c22d1a48f.html" title="San Bernardino, San Bernardino, California, United States of America">San Bernardino, San Bernardino, California, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1935-01-12</td>
+						<td class="ColumnPlace"><a href="../../../plc/3/0/e830b28faf1f1e40111c5c0e03.html" title="San Francisco, San Francisco, California, United States of America">San Francisco, San Francisco, California, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1941-02-07</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1947-03-10</td>
+						<td class="ColumnPlace"><a href="../../../plc/d/a/e867a2e83c2170d8b2d3262c4ad.html" title="Long Beach, Los Angeles, California, United States of America">Long Beach, Los Angeles, California, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1952-05-09</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1957-12-31</td>
+						<td class="ColumnPlace"><a href="../../../plc/6/1/e867a202d49301d370c354f9c16.html" title="Searchlight, Clark, Nevada, United States of America">Searchlight, Clark, Nevada, United States of America</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="fullclear"></div>
+	<div id="footer">
+		<p id="createdate">
+		Generated by <a href="http://gramps-project.org/">Gramps</a> 4.2.8 on 2020-08-21
+		</p>
+		<p id="copyright">
+		
+		</p>
+	</div>
+</body>
+</html>
