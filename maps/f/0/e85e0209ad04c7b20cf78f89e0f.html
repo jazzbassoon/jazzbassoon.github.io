@@ -27,31 +27,12 @@
     var tracelife = [
     [-3.734072, 55.976926, 'Wallacestone, Stirlingshire, Scotland'],
     [-3.566167, 55.852019, 'West Calder, Edinburghshire, Scotland'],
-    [-1.466597, 53.381241, 'Sheffield, Yorkshire, Yorkshire and the Humber, England'],
     [-3.734072, 55.976926, 'Wallacestone, Stirlingshire, Scotland'],
     [-111.004629, 41.331612, 'Almy, Uinta, Wyoming, United States of America'],
-    [-111.004629, 41.331612, 'Almy, Uinta, Wyoming, United States of America'],
-    [-111.004629, 41.331612, 'Almy, Uinta, Wyoming, United States of America'],
-    [-111.004629, 41.331612, 'Almy, Uinta, Wyoming, United States of America'],
-    [-111.004629, 41.331612, 'Almy, Uinta, Wyoming, United States of America'],
-    [-110.685448, 41.252170, 'Spring Valley, Uinta, Wyoming, United States of America'],
-    [-111.004629, 41.331612, 'Almy, Uinta, Wyoming, United States of America'],
-    [-110.685448, 41.252170, 'Spring Valley, Uinta, Wyoming, United States of America'],
-    [-110.538347, 41.780069, 'Diamondville, Uinta, Wyoming, United States of America'],
-    [-110.612000, 41.724000, 'Elkol, Lincoln, Wyoming, United States of America'],
-    [-110.540797, 41.717970, 'Glencoe, Lincoln, Wyoming, United States of America'],
-    [-110.578346, 41.599858, 'Cumberland, Lincoln, Wyoming, United States of America'],
-    [-110.578346, 41.599858, 'Cumberland, Lincoln, Wyoming, United States of America'],
     [-110.963096, 41.266966, 'Evanston, Uinta, Wyoming, United States of America'],
     [-110.963096, 41.266966, 'Evanston, Uinta, Wyoming, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-110.289832, 41.323332, 'Lyman, Uinta, Wyoming, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-112.027647, 41.162558, 'Roy, Weber, Utah, United States of America'],
-    [-111.979171, 41.709868, 'Mendon, Cache, Utah, United States of America'],
-    [-112.444661, 42.862741, 'Pocatello, Bannock, Idaho, United States of America']
+    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America']
   ];;
     var iconStyle = new ol.style.Style({
       image: new ol.style.Icon(({
@@ -78,12 +59,12 @@
       source: markerSource,
       style: iconStyle
     });
-    var centerCoord = new ol.proj.transform([-2.60033450, 48.36886300], 'EPSG:4326', 'EPSG:3857');
+    var centerCoord = new ol.proj.transform([-57.01195000, 48.36886300], 'EPSG:4326', 'EPSG:3857');
     map= new ol.Map({
                  target: 'map_canvas',
                  layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
                           markerLayer],
-                 view: new ol.View({ center: centerCoord, zoom: 6 })
+                 view: new ol.View({ center: centerCoord, zoom: 3 })
                  });
     var element = document.getElementById('popup');
     var tooltip = new ol.Overlay({
@@ -179,79 +160,14 @@
 							<td class="ColumnType">Birth</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1872-06-26</td>
-							<td class="ColumnPlace"><a href="../../../plc/f/e/e85adf8f5353be5496a0717a5ef.html" title="Sheffield, Yorkshire, Yorkshire and the Humber, England">Sheffield, Yorkshire, Yorkshire and the Humber, England</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1889-09-02</td>
 							<td class="ColumnPlace"><a href="../../../plc/c/4/e85e049b9a41c8f48679d21b4c.html" title="Wallacestone, Stirlingshire, Scotland">Wallacestone, Stirlingshire, Scotland</a></td>
 							<td class="ColumnType">Marriage</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1890-06-06</td>
-							<td class="ColumnPlace"><a href="../../../plc/4/5/e73055c72443e06d8c8bcd3df54.html" title="Almy, Uinta, Wyoming, United States of America">Almy, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1892-01-14</td>
 							<td class="ColumnPlace"><a href="../../../plc/4/5/e73055c72443e06d8c8bcd3df54.html" title="Almy, Uinta, Wyoming, United States of America">Almy, Uinta, Wyoming, United States of America</a></td>
 							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1894-01-30</td>
-							<td class="ColumnPlace"><a href="../../../plc/4/5/e73055c72443e06d8c8bcd3df54.html" title="Almy, Uinta, Wyoming, United States of America">Almy, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1896-07-27</td>
-							<td class="ColumnPlace"><a href="../../../plc/4/5/e73055c72443e06d8c8bcd3df54.html" title="Almy, Uinta, Wyoming, United States of America">Almy, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1899-06-04</td>
-							<td class="ColumnPlace"><a href="../../../plc/4/5/e73055c72443e06d8c8bcd3df54.html" title="Almy, Uinta, Wyoming, United States of America">Almy, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1901-10-03</td>
-							<td class="ColumnPlace"><a href="../../../plc/c/b/e85e0c116a4610cf33384ab1abc.html" title="Spring Valley, Uinta, Wyoming, United States of America">Spring Valley, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1901-12-22</td>
-							<td class="ColumnPlace"><a href="../../../plc/4/5/e73055c72443e06d8c8bcd3df54.html" title="Almy, Uinta, Wyoming, United States of America">Almy, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1903-12-21</td>
-							<td class="ColumnPlace"><a href="../../../plc/c/b/e85e0c116a4610cf33384ab1abc.html" title="Spring Valley, Uinta, Wyoming, United States of America">Spring Valley, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1907-03-23</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/d/e85e0db8ba31b8dcf0863318cd7.html" title="Diamondville, Uinta, Wyoming, United States of America">Diamondville, Uinta, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1909-08-11</td>
-							<td class="ColumnPlace"><a href="../../../plc/d/0/e85e0f75a7962b0967d29771a0d.html" title="Elkol, Lincoln, Wyoming, United States of America">Elkol, Lincoln, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1911-12-25</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/7/e6d6eee34fd5b07306d15349f71.html" title="Glencoe, Lincoln, Wyoming, United States of America">Glencoe, Lincoln, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1914-11-19</td>
-							<td class="ColumnPlace"><a href="../../../plc/a/a/e85dfa58a8f6747f4613fb1c0aa.html" title="Cumberland, Lincoln, Wyoming, United States of America">Cumberland, Lincoln, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1920-02-23</td>
-							<td class="ColumnPlace"><a href="../../../plc/a/a/e85dfa58a8f6747f4613fb1c0aa.html" title="Cumberland, Lincoln, Wyoming, United States of America">Cumberland, Lincoln, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Death</td>
 						</tr>
 						<tr>
 							<td class="ColumnDate">1924-06-20</td>
@@ -264,11 +180,6 @@
 							<td class="ColumnType">Death</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1947-01-19</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1965</td>
 							<td class="ColumnPlace"><a href="../../../plc/0/6/e6cc3180f162c45c20d14f4d460.html" title="Lyman, Uinta, Wyoming, United States of America">Lyman, Uinta, Wyoming, United States of America</a></td>
 							<td class="ColumnType">Burial</td>
@@ -278,31 +189,6 @@
 							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
 							<td class="ColumnType">Death</td>
 						</tr>
-						<tr>
-							<td class="ColumnDate">1972-01-27</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1974-09-27</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1979-01-31</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/6/e85e0a3208624904ae7bdad5861.html" title="Roy, Weber, Utah, United States of America">Roy, Weber, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1979-10-06</td>
-							<td class="ColumnPlace"><a href="../../../plc/2/9/e85e085c90872a49fa96f1e6592.html" title="Mendon, Cache, Utah, United States of America">Mendon, Cache, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1999-04-10</td>
-							<td class="ColumnPlace"><a href="../../../plc/3/8/e85e10255594369aa5ee234ad83.html" title="Pocatello, Bannock, Idaho, United States of America">Pocatello, Bannock, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -310,7 +196,7 @@
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2020-09-20
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2020-09-27
 			</p>
 			<p id="copyright">
 			&copy; 2020 Benjamin Bradshaw

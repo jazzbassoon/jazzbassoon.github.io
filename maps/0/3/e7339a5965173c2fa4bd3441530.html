@@ -28,35 +28,12 @@
     [-113.061722, 37.680492, 'Cedar City, Iron, Utah, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-111.090480, 38.276220, 'Aldridge, Wayne, Utah, United States of America'],
-    [-111.090480, 38.276220, 'Aldridge, Wayne, Utah, United States of America'],
-    [-111.090480, 38.276220, 'Aldridge, Wayne, Utah, United States of America'],
     [-111.018800, 38.333000, 'Caineville, Wayne, Utah, United States of America'],
-    [-111.018800, 38.333000, 'Caineville, Wayne, Utah, United States of America'],
-    [-107.911305, 30.441224, 'Colonia Dublan, Nuevo Casas Grandes, Chihuahua, Mexico'],
-    [-110.975701, 32.227128, 'Tucson, Pima, Arizona, United States of America'],
     [-111.589476, 38.393953, 'Lyman, Wayne, Utah, United States of America'],
     [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
     [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
     [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-110.975701, 32.227128, 'Tucson, Pima, Arizona, United States of America'],
-    [-111.824700, 40.668800, 'Holladay, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.818043, 39.155370, 'Gunnison, Sanpete, Utah, United States of America'],
-    [-111.974665, 41.222883, 'Ogden, Weber, Utah, United States of America'],
-    [-111.824700, 40.668800, 'Holladay, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-113.289900, 37.175300, 'Hurricane, Washington, Utah, United States of America'],
-    [-108.389561, 44.837453, 'Lovell, Big Horn, Wyoming, United States of America'],
-    [-116.993961, 43.878398, 'Nyssa, Malheur, Oregon, United States of America']
+    [-111.824700, 40.668800, 'Holladay, Salt Lake, Utah, United States of America']
   ];;
     var iconStyle = new ol.style.Style({
       image: new ol.style.Icon(({
@@ -83,12 +60,12 @@
       source: markerSource,
       style: iconStyle
     });
-    var centerCoord = new ol.proj.transform([-112.45264000, 37.63933800], 'EPSG:4326', 'EPSG:3857');
+    var centerCoord = new ol.proj.transform([-112.04026000, 39.22064600], 'EPSG:4326', 'EPSG:3857');
     map= new ol.Map({
                  target: 'map_canvas',
                  layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
                           markerLayer],
-                 view: new ol.View({ center: centerCoord, zoom: 5 })
+                 view: new ol.View({ center: centerCoord, zoom: 6 })
                  });
     var element = document.getElementById('popup');
     var tooltip = new ol.Overlay({
@@ -189,79 +166,9 @@
 							<td class="ColumnType">Marriage</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1874-11-04</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1876-04-20</td>
-							<td class="ColumnPlace"><a href="../../../plc/5/4/e733998a3315d984f48a555d445.html" title="Aurora, Sevier, Utah, United States of America">Aurora, Sevier, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1877-03-03</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1877-03-04</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1878-04-01</td>
-							<td class="ColumnPlace"><a href="../../../plc/5/4/e733998a3315d984f48a555d445.html" title="Aurora, Sevier, Utah, United States of America">Aurora, Sevier, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1880-04-13</td>
-							<td class="ColumnPlace"><a href="../../../plc/5/4/e733998a3315d984f48a555d445.html" title="Aurora, Sevier, Utah, United States of America">Aurora, Sevier, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1883-10-30</td>
-							<td class="ColumnPlace"><a href="../../../plc/5/4/e733998a3315d984f48a555d445.html" title="Aurora, Sevier, Utah, United States of America">Aurora, Sevier, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1887-02-07</td>
-							<td class="ColumnPlace"><a href="../../../plc/5/4/e733998a3315d984f48a555d445.html" title="Aurora, Sevier, Utah, United States of America">Aurora, Sevier, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1890-02-05</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/6/e83a8ec4ea12ead740e4ebdea67.html" title="Aldridge, Wayne, Utah, United States of America">Aldridge, Wayne, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1891-10-05</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/6/e83a8ec4ea12ead740e4ebdea67.html" title="Aldridge, Wayne, Utah, United States of America">Aldridge, Wayne, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1893-05-24</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/6/e83a8ec4ea12ead740e4ebdea67.html" title="Aldridge, Wayne, Utah, United States of America">Aldridge, Wayne, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1894-10-04</td>
-							<td class="ColumnPlace"><a href="../../../plc/e/6/e6d620b212379bffa66d94cf66e.html" title="Caineville, Wayne, Utah, United States of America">Caineville, Wayne, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1896-11-03</td>
 							<td class="ColumnPlace"><a href="../../../plc/e/6/e6d620b212379bffa66d94cf66e.html" title="Caineville, Wayne, Utah, United States of America">Caineville, Wayne, Utah, United States of America</a></td>
 							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1899-04-29</td>
-							<td class="ColumnPlace"><a href="../../../plc/4/e/e83a93e378b31f8e034b04d75e4.html" title="Colonia Dublan, Nuevo Casas Grandes, Chihuahua, Mexico">Colonia Dublan, Nuevo Casas Grandes, Chihuahua, Mexico</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1921-01-19</td>
-							<td class="ColumnPlace"><a href="../../../plc/0/3/e83a884446541ae9c25d1bf6b30.html" title="Tucson, Pima, Arizona, United States of America">Tucson, Pima, Arizona, United States of America</a></td>
-							<td class="ColumnType">Death</td>
 						</tr>
 						<tr>
 							<td class="ColumnDate">1925-11-15</td>
@@ -284,53 +191,8 @@
 							<td class="ColumnType">Burial</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1948-01-24</td>
-							<td class="ColumnPlace"><a href="../../../plc/0/3/e83a884446541ae9c25d1bf6b30.html" title="Tucson, Pima, Arizona, United States of America">Tucson, Pima, Arizona, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1957-03-01</td>
 							<td class="ColumnPlace"><a href="../../../plc/c/d/e6d622d395378f66a2305cad5dc.html" title="Holladay, Salt Lake, Utah, United States of America">Holladay, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1960-10-09</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1963-09-28</td>
-							<td class="ColumnPlace"><a href="../../../plc/f/7/e83a91376532e73380fe9e88e7f.html" title="Gunnison, Sanpete, Utah, United States of America">Gunnison, Sanpete, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1964-11-18</td>
-							<td class="ColumnPlace"><a href="../../../plc/d/8/e83a8b61171398d01038a070b8d.html" title="Ogden, Weber, Utah, United States of America">Ogden, Weber, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1971-04-13</td>
-							<td class="ColumnPlace"><a href="../../../plc/c/d/e6d622d395378f66a2305cad5dc.html" title="Holladay, Salt Lake, Utah, United States of America">Holladay, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1971-07-29</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1977-10-29</td>
-							<td class="ColumnPlace"><a href="../../../plc/9/9/e6d5c6b6c4238b032852d8b6099.html" title="Hurricane, Washington, Utah, United States of America">Hurricane, Washington, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1983-04-26</td>
-							<td class="ColumnPlace"><a href="../../../plc/5/3/e83a925aa2557c24d937c583835.html" title="Lovell, Big Horn, Wyoming, United States of America">Lovell, Big Horn, Wyoming, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1988-01-17</td>
-							<td class="ColumnPlace"><a href="../../../plc/d/c/e83a9005398623f98832ca800cd.html" title="Nyssa, Malheur, Oregon, United States of America">Nyssa, Malheur, Oregon, United States of America</a></td>
 							<td class="ColumnType">Death</td>
 						</tr>
 					</tbody>
@@ -340,7 +202,7 @@
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2020-09-20
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2020-09-27
 			</p>
 			<p id="copyright">
 			&copy; 2020 Benjamin Bradshaw

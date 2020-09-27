@@ -26,58 +26,14 @@
     var map;
     var tracelife = [
     [-78.690228, 43.170425, 'Lockport, Niagara, New York, United States of America'],
-    [-82.413529, 41.323220, 'Florence, Erie, Ohio, United States of America'],
     [-94.417559, 39.245763, 'Liberty, Clay, Missouri, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-112.021347, 42.258810, 'Oxford, Bannock, Idaho, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
-    [-111.608677, 40.165189, 'Springville, Utah, Utah, United States of America'],
     [-111.577141, 40.130633, 'Mapleton, Utah, Utah, United States of America'],
-    [-111.577141, 40.130633, 'Mapleton, Utah, Utah, United States of America'],
-    [-109.527225, 40.454551, 'Vernal, Uintah, Utah, United States of America'],
-    [-111.946015, 45.293340, 'Virginia City, Madison, Montana, United States of America'],
-    [-112.021347, 42.258810, 'Oxford, Bannock, Idaho, United States of America'],
-    [-122.443248, 47.253048, 'Tacoma, Pierce, Washington, United States of America'],
     [-112.021347, 42.258810, 'Oxford, Bannock, Idaho, United States of America'],
     [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America'],
-    [-111.792508, 43.823869, 'Rexburg, Madison, Idaho, United States of America'],
-    [-116.499439, 43.873030, 'Emmett, Gem, Idaho, United States of America'],
-    [-112.344535, 43.190110, 'Blackfoot, Bingham, Idaho, United States of America'],
-    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
-    [-111.658534, 40.233844, 'Provo, Utah, Utah, United States of America'],
-    [-111.869971, 43.728865, 'Lorenzo, Jefferson, Idaho, United States of America'],
-    [-111.658534, 40.233844, 'Provo, Utah, Utah, United States of America'],
-    [-112.115435, 41.814165, 'Fielding, Box Elder, Utah, United States of America'],
-    [-112.838361, 42.944099, 'Aberdeen, Bingham, Idaho, United States of America'],
-    [-112.853624, 42.785942, 'American Falls, Power, Idaho, United States of America'],
-    [-111.658534, 40.233844, 'Provo, Utah, Utah, United States of America']
+    [-111.934021, 38.920204, 'Aurora, Sevier, Utah, United States of America']
   ];;
     var iconStyle = new ol.style.Style({
       image: new ol.style.Icon(({
@@ -104,7 +60,7 @@
       source: markerSource,
       style: iconStyle
     });
-    var centerCoord = new ol.proj.transform([-101.97239000, 43.08662600], 'EPSG:4326', 'EPSG:3857');
+    var centerCoord = new ol.proj.transform([-102.99735000, 41.04531400], 'EPSG:4326', 'EPSG:3857');
     map= new ol.Map({
                  target: 'map_canvas',
                  layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
@@ -200,11 +156,6 @@
 							<td class="ColumnType">Birth</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1834-03-24</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/8/e8d53e976ff1b1685af76a4d981.html" title="Florence, Erie, Ohio, United States of America">Florence, Erie, Ohio, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1836-03-17</td>
 							<td class="ColumnPlace"><a href="../../../plc/5/4/e8d53206f8ca6da768037c9245.html" title="Liberty, Clay, Missouri, United States of America">Liberty, Clay, Missouri, United States of America</a></td>
 							<td class="ColumnType">Birth</td>
@@ -215,44 +166,9 @@
 							<td class="ColumnType">Marriage</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1849-10-14</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1851-09-25</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1852-07-07</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1852-09-19</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1852-11-30</td>
 							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
 							<td class="ColumnType">Marriage</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1853-10-30</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1855-03-30</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1855-08-01</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
 						</tr>
 						<tr>
 							<td class="ColumnDate">1855-12-20</td>
@@ -260,137 +176,12 @@
 							<td class="ColumnType">Birth</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1857-01-25</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1858-01-24</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1859-07-09</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1859-12-21</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1861-09-22</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1862-07-24</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1862-09-00</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1863-07-14</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1864-08-27</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1865-10-30</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1866-09-26</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1868-12-27</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1871-03-25</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1871-07-13</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1871-09-25</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1872-11-16</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1873-12-18</td>
-							<td class="ColumnPlace"><a href="../../../plc/e/6/e8d532eaa9d7bd7e005b668fe6e.html" title="Oxford, Bannock, Idaho, United States of America">Oxford, Bannock, Idaho, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1875-03-07</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1877-07-08</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Birth</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1886-08-18</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e83a8767d203de8b5d079ae3111.html" title="Springville, Utah, Utah, United States of America">Springville, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1903-03-10</td>
 							<td class="ColumnPlace"><a href="../../../plc/c/3/e8d5310678e372d83f7d31a7b3c.html" title="Mapleton, Utah, Utah, United States of America">Mapleton, Utah, Utah, United States of America</a></td>
 							<td class="ColumnType">Death</td>
 						</tr>
 						<tr>
-							<td class="ColumnDate">1915-01-02</td>
-							<td class="ColumnPlace"><a href="../../../plc/c/3/e8d5310678e372d83f7d31a7b3c.html" title="Mapleton, Utah, Utah, United States of America">Mapleton, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1916-05-24</td>
-							<td class="ColumnPlace"><a href="../../../plc/1/1/e888090efbd50fe5c8303369011.html" title="Vernal, Uintah, Utah, United States of America">Vernal, Uintah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1917-07-17</td>
-							<td class="ColumnPlace"><a href="../../../plc/d/6/e8d54339d0767f1edff75ce836d.html" title="Virginia City, Madison, Montana, United States of America">Virginia City, Madison, Montana, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
 							<td class="ColumnDate">1924-02-01</td>
-							<td class="ColumnPlace"><a href="../../../plc/e/6/e8d532eaa9d7bd7e005b668fe6e.html" title="Oxford, Bannock, Idaho, United States of America">Oxford, Bannock, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1926-06-19</td>
-							<td class="ColumnPlace"><a href="../../../plc/a/a/e8d5399244932eea448dc4227aa.html" title="Tacoma, Pierce, Washington, United States of America">Tacoma, Pierce, Washington, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1927-04-28</td>
 							<td class="ColumnPlace"><a href="../../../plc/e/6/e8d532eaa9d7bd7e005b668fe6e.html" title="Oxford, Bannock, Idaho, United States of America">Oxford, Bannock, Idaho, United States of America</a></td>
 							<td class="ColumnType">Death</td>
 						</tr>
@@ -404,61 +195,6 @@
 							<td class="ColumnPlace"><a href="../../../plc/5/4/e733998a3315d984f48a555d445.html" title="Aurora, Sevier, Utah, United States of America">Aurora, Sevier, Utah, United States of America</a></td>
 							<td class="ColumnType">Burial</td>
 						</tr>
-						<tr>
-							<td class="ColumnDate">1934-06-18</td>
-							<td class="ColumnPlace"><a href="../../../plc/b/a/e8d5376f3ae5d6cb667bc90cdab.html" title="Rexburg, Madison, Idaho, United States of America">Rexburg, Madison, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1937-01-31</td>
-							<td class="ColumnPlace"><a href="../../../plc/a/9/e8d5384f44830f5d215beb1249a.html" title="Emmett, Gem, Idaho, United States of America">Emmett, Gem, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1937-09-07</td>
-							<td class="ColumnPlace"><a href="../../../plc/f/b/e8d5416aff37bb89525e5f3c8bf.html" title="Blackfoot, Bingham, Idaho, United States of America">Blackfoot, Bingham, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1937-12-07</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1938-12-31</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/a/e6cc306207c48d2c166f95051a7.html" title="Provo, Utah, Utah, United States of America">Provo, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1940-03-24</td>
-							<td class="ColumnPlace"><a href="../../../plc/3/2/e8d535172ea1381224f7ee6d23.html" title="Lorenzo, Jefferson, Idaho, United States of America">Lorenzo, Jefferson, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1946-12-23</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/a/e6cc306207c48d2c166f95051a7.html" title="Provo, Utah, Utah, United States of America">Provo, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1951-07-25</td>
-							<td class="ColumnPlace"><a href="../../../plc/3/f/e8d536590cb568e7b9bc81b73f3.html" title="Fielding, Box Elder, Utah, United States of America">Fielding, Box Elder, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1952-05-23</td>
-							<td class="ColumnPlace"><a href="../../../plc/b/8/e8d53b56ba16e04ae7422846a8b.html" title="Aberdeen, Bingham, Idaho, United States of America">Aberdeen, Bingham, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1956-12-15</td>
-							<td class="ColumnPlace"><a href="../../../plc/a/4/e8d53d4f637370821cfb639a74a.html" title="American Falls, Power, Idaho, United States of America">American Falls, Power, Idaho, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
-						<tr>
-							<td class="ColumnDate">1960-09-23</td>
-							<td class="ColumnPlace"><a href="../../../plc/7/a/e6cc306207c48d2c166f95051a7.html" title="Provo, Utah, Utah, United States of America">Provo, Utah, Utah, United States of America</a></td>
-							<td class="ColumnType">Death</td>
-						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -466,7 +202,7 @@
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2020-09-20
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2020-09-27
 			</p>
 			<p id="copyright">
 			&copy; 2020 Benjamin Bradshaw
