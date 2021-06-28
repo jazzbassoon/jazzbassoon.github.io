@@ -25,9 +25,20 @@
   function initialize(){
     var map;
     var tracelife = [
+    [1.115280, 52.569331, 'Wymondham, Norfolk, East, England'],
+    [1.022607, 52.559510, 'Deopham, Norfolk, East, England'],
+    [1.115280, 52.569331, 'Wymondham, Norfolk, East, England'],
+    [1.115280, 52.569331, 'Wymondham, Norfolk, East, England'],
+    [-2.988148, 53.408624, 'Liverpool, Lancashire, North West, England'],
+    [-90.083789, 29.964314, 'New Orleans, Orleans, Louisiana, United States of America'],
+    [-91.396766, 40.404554, 'Keokuk, Lee, Iowa, United States of America'],
+    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
+    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
+    [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.858898, 40.776930, 'Salt Lake City Cemetery, Salt Lake City, Salt Lake, Utah, United States of America'],
+    [-111.931213, 41.132217, 'South Weber, Davis, Utah, United States of America'],
     [-111.858898, 40.776930, 'Salt Lake City Cemetery, Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.891000, 40.760800, 'Salt Lake City, Salt Lake, Utah, United States of America'],
     [-111.858898, 40.776930, 'Salt Lake City Cemetery, Salt Lake City, Salt Lake, Utah, United States of America']
@@ -57,12 +68,12 @@
       source: markerSource,
       style: iconStyle
     });
-    var centerCoord = new ol.proj.transform([-111.87495000, 40.76886500], 'EPSG:4326', 'EPSG:3857');
+    var centerCoord = new ol.proj.transform([-55.37181000, 41.68646900], 'EPSG:4326', 'EPSG:3857');
     map= new ol.Map({
                  target: 'map_canvas',
                  layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
                           markerLayer],
-                 view: new ol.View({ center: centerCoord, zoom: 6 })
+                 view: new ol.View({ center: centerCoord, zoom: 3 })
                  });
     var element = document.getElementById('popup');
     var tooltip = new ol.Overlay({
@@ -151,9 +162,59 @@
 					</thead>
 					<tbody>
 						<tr>
+							<td class="ColumnDate">1823-06-29</td>
+							<td class="ColumnPlace"><a href="../../../plc/2/9/ec71182fe583739b4f61740d992.html" title="Wymondham, Norfolk, East, England">Wymondham, Norfolk, East, England</a></td>
+							<td class="ColumnType">Birth</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1824-06-15</td>
+							<td class="ColumnPlace"><a href="../../../plc/9/7/ec711a9131a778b630f713f5079.html" title="Deopham, Norfolk, East, England">Deopham, Norfolk, East, England</a></td>
+							<td class="ColumnType">Birth</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1842-11-02</td>
+							<td class="ColumnPlace"><a href="../../../plc/2/9/ec71182fe583739b4f61740d992.html" title="Wymondham, Norfolk, East, England">Wymondham, Norfolk, East, England</a></td>
+							<td class="ColumnType">Marriage</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1851</td>
+							<td class="ColumnPlace"><a href="../../../plc/2/9/ec71182fe583739b4f61740d992.html" title="Wymondham, Norfolk, East, England">Wymondham, Norfolk, East, England</a></td>
+							<td class="ColumnType">Census</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1853-01-23</td>
+							<td class="ColumnPlace"><a href="../../../plc/0/0/e86e26e981434c44e97dc6c5a00.html" title="Liverpool, Lancashire, North West, England">Liverpool, Lancashire, North West, England</a></td>
+							<td class="ColumnType">Emigration</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1853-03-26</td>
+							<td class="ColumnPlace"><a href="../../../plc/0/b/ec729c771e7664b29756f79ceb0.html" title="New Orleans, Orleans, Louisiana, United States of America">New Orleans, Orleans, Louisiana, United States of America</a></td>
+							<td class="ColumnType">Immigration</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1853-06-03</td>
+							<td class="ColumnPlace"><a href="../../../plc/5/e/ec7404dade8184aadf0a7ff82e5.html" title="Keokuk, Lee, Iowa, United States of America">Keokuk, Lee, Iowa, United States of America</a></td>
+							<td class="ColumnType">Emigration</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1853-09-17</td>
+							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+							<td class="ColumnType">Immigration</td>
+						</tr>
+						<tr>
 							<td class="ColumnDate">1857-01-05</td>
 							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
 							<td class="ColumnType">Birth</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1860-08-01</td>
+							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+							<td class="ColumnType">Census</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1870-08-20</td>
+							<td class="ColumnPlace"><a href="../../../plc/7/f/e6cb9e30b151ed7cb17b30387f7.html" title="Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City, Salt Lake, Utah, United States of America</a></td>
+							<td class="ColumnType">Census</td>
 						</tr>
 						<tr>
 							<td class="ColumnDate">1895-11-07</td>
@@ -164,6 +225,11 @@
 							<td class="ColumnDate">1895-11-10</td>
 							<td class="ColumnPlace"><a href="../../../plc/f/1/ea2e5d46aa2149b97b2d97f21f.html" title="Salt Lake City Cemetery, Salt Lake City, Salt Lake, Utah, United States of America">Salt Lake City Cemetery, Salt Lake City, Salt Lake, Utah, United States of America</a></td>
 							<td class="ColumnType">Burial</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1903-02-19</td>
+							<td class="ColumnPlace"><a href="../../../plc/3/2/ec711941a735a72f2b68b2c4d23.html" title="South Weber, Davis, Utah, United States of America">South Weber, Davis, Utah, United States of America</a></td>
+							<td class="ColumnType">Death</td>
 						</tr>
 						<tr>
 							<td class="ColumnDate">1903-02-22</td>
@@ -187,7 +253,7 @@
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2021-06-13<br />Created for <a href="../../../ppl/2/f/e6ca3d0e2471be38372e96262f2.html">Ancestors of Bradshaw, Benjamin Keith</a>
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.1.3 on 2021-06-28<br />Created for <a href="../../../ppl/2/f/e6ca3d0e2471be38372e96262f2.html">Ancestors of Bradshaw, Benjamin Keith</a>
 			</p>
 			<p id="copyright">
 			
